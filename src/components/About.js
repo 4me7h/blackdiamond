@@ -2,6 +2,7 @@ import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 
+import '../styles/Styles.scss';
 import './About.scss';
 
 const About = () => {
@@ -21,7 +22,7 @@ const About = () => {
                                     </p>
                                 </div>
                                 <div className="about__col">
-
+                                    Video
                                 </div>
                             </div>
                         </Col>
