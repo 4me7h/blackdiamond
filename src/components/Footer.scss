@@ -1,0 +1,20 @@
+.footer {
+    padding: 3rem 0;
+    background-color: $color-black;
+    color: $color-white;
+
+    &__grid {
+        @include reset-list;
+        display: flex;
+    }
+
+    &__item {
+        width: (100%/3);
+        &:nth-child(2) {
+            text-align: center;
+        }
+        &:nth-child(3) {
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.gridimg {
+    padding: 3rem 0;
+    &__list {
+        @include reset-list;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        @include bgimg;
+        width: 33%;
+        height: 320px;
+        margin-bottom: 0.5rem;
+    }
+}

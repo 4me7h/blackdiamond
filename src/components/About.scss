@@ -1,7 +1,6 @@
-@import '../styles/Styles.scss';
-
 .about {
     background-color: black;
+    padding: 2rem 0;
     &__container {
         display: flex;
     }
@@ -11,7 +10,11 @@
         padding: 2rem 0;
     }
 
-    p {
+    &__text--title {
         color: $color-yellow;
+    }
+
+    &__text--lead {
+        color: $color-white;
     }
 }

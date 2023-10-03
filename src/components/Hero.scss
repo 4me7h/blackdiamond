@@ -1,10 +1,7 @@
 .hero {
     height: 580px;
-    &--img {
-        position: relative;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    &--bgimg {
+        @include bgimg;
     }
 
     //filter
@@ -22,6 +19,6 @@
         max-width: 1000px;
         margin: 0 auto;
         padding: 8rem 0;
-        color: white;
+        color: $color-white;
     }
 }
