@@ -2,6 +2,8 @@ import Col from "react-bootstrap/esm/Col";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 
+import { Link } from "react-router-dom";
+
 const Footer = () => {
     return(
         <footer className="footer">
@@ -13,12 +15,16 @@ const Footer = () => {
                                 <ul className="footer__grid">
                                     <li className="footer__item">
                                         <h4 className="text--footer-title">Logo</h4>
-                                        <p className="text--footer ">
-                                            Todos los derechos reservados ® 2023<br />
-                                            Términos y condiciones<br />
-                                            Politica de privacidad<br />
-                                            Cookies
-                                        </p>
+                                        
+                                        <Link to="/">home</Link><br />
+      <Link to="/about">about</Link>
+                                        
+                                        <ul className="footer__list">
+                                            <li className="text--footer">Todos los derechos reservados ® 2023</li>
+                                            <li className="text--footer">Términos y condiciones</li>
+                                            <li className="text--footer">Politica de privacidad</li>
+                                            <li className="text--footer">Cookies</li>
+                                        </ul>
                                     </li>
                                     <li className="footer__item">
                                         <h4 className="text--footer-title">Social Media</h4>

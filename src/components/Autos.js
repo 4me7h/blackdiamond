@@ -8,7 +8,7 @@ const Autos = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h3 class="text--subtitle text-center">Autos en dinámica</h3>
+                        <h3 className="text--subtitle text-center">Autos en dinámica</h3>
                     </Col>
                 </Row>
             </Container>
