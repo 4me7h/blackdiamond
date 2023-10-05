@@ -14,16 +14,12 @@ const Footer = () => {
                             <div className="footer__content">
                                 <ul className="footer__grid">
                                     <li className="footer__item">
-                                        <h4 className="text--footer-title">Logo</h4>
-                                        
-                                        <Link to="/">home</Link><br />
-      <Link to="/about">about</Link>
-                                        
+                                        <h4 className="text--footer-title"><Link to="/">Logo</Link></h4>
                                         <ul className="footer__list">
                                             <li className="text--footer">Todos los derechos reservados ® 2023</li>
-                                            <li className="text--footer">Términos y condiciones</li>
-                                            <li className="text--footer">Politica de privacidad</li>
-                                            <li className="text--footer">Cookies</li>
+                                            <li className="text--footer"><Link to="/terminos">Términos y condiciones</Link></li>
+                                            <li className="text--footer"><Link to="/politica">Politica de privacidad</Link></li>
+                                            <li className="text--footer"><Link to="/cookies">Cookies</Link></li>
                                         </ul>
                                     </li>
                                     <li className="footer__item">

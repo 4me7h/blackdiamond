@@ -1,10 +1,11 @@
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const About = () => {
     return(
         <div>
-            
-        <section>About Page</section>
+        <Navbar />
+        <h1>Nosotros Page</h1>
         <Footer />
         </div>
         
