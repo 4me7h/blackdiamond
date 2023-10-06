@@ -1,5 +1,9 @@
 .hero {
-    height: 580px;
+    height: 350px;
+
+    @include media('md') {
+        height: 580px;
+    }
     &--bgimg {
         @include bgimg;
     }

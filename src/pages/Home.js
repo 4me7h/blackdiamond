@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import About from "../components/About";
+import Nosotros from "../components/Nosotros";
 import Autos from "../components/Autos";
 import Banner from "../components/Banner";
 import Gridimg from "../components/Gridimg";
@@ -11,7 +11,7 @@ const Home = () => {
         <>  
             <Navbar />
             <Hero />
-            <About />
+            <Nosotros />
             <Autos />
             <Banner />
             <Gridimg />
