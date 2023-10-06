@@ -3,18 +3,63 @@
     background-color: $color-black;
     color: $color-white;
 
+    &__logo {
+        width: 150px;
+        margin-bottom: 1rem;
+    }
+
     &__grid {
         @include reset-list;
         display: flex;
     }
 
-    &__item {
+    &__col {
         width: (100%/3);
         &:nth-child(2) {
             text-align: center;
         }
         &:nth-child(3) {
             text-align: right;
+        }
+    }
+
+    &__list {
+        @include reset-list;
+        &__item {
+            margin-bottom: 0;
+            a {
+                @include link {
+                    color: $color-white;
+                    text-decoration: none;
+                }
+                @include hover {
+                    color: darken($color-white, 20);
+                }
+            }
+        }
+    }
+
+    &__socialmedia {
+        @include reset-list;
+        display: flex;
+        justify-content: center;
+        &__item {
+            margin-right: 1rem;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &__iconlink {
+            @include link {
+                color: $color-white;
+                background-color: $color-yellow;
+                display: block;
+                padding: 0.375rem;
+                border-radius: 50%;
+            }
+            @include hover {
+                background-color: darken($color-yellow, 15);
+            }
         }
     }
 }
