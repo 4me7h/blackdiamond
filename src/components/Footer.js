@@ -17,7 +17,6 @@ const Footer = () => {
                                     <li className="footer__col">
                                         <Link to="/"><img class="footer__logo" src={logoColor} alt="logoBD"/></Link>
                                         <ul className="footer__list">
-                                            <li className="footer__list__item text--footer">Todos los derechos reservados ® 2023</li>
                                             <li className="footer__list__item text--footer"><Link to="/terminos">Términos y condiciones</Link></li>
                                             <li className="footer__list__item text--footer"><Link to="/politica">Politica de privacidad</Link></li>
                                             <li className="footer__list__item text--footer"><Link to="/cookies">Cookies</Link></li>
@@ -80,7 +79,11 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
-
+            <div className="footer__bottom">
+                <p>
+                    Todos los Derechos Reservados ® {new Date().getFullYear()}
+                </p>
+            </div>
         </footer>
     );
 }

@@ -1,7 +1,10 @@
 .footer {
-    padding: 3rem 0;
+    padding: 3rem 0 0;
     background-color: $color-black;
     color: $color-white;
+    &__content {
+        margin-bottom: 1rem;
+    }
 
     &__logo {
         width: 150px;
@@ -11,15 +14,25 @@
     &__grid {
         @include reset-list;
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__col {
-        width: (100%/3);
-        &:nth-child(2) {
-            text-align: center;
-        }
-        &:nth-child(3) {
-            text-align: right;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2.5rem;
+
+        @include media('md') {
+            width: (100%/3);
+            &:nth-child(1) {
+                text-align: left;;
+            }
+            &:nth-child(2) {
+                text-align: center;
+            }
+            &:nth-child(3) {
+                text-align: right;
+            }
         }
     }
 
@@ -60,6 +73,19 @@
             @include hover {
                 background-color: darken($color-yellow, 15);
             }
+        }
+    }
+
+    &__bottom {
+        background-color: $color-yellow;
+        padding: 0.5rem;
+        text-align: center;
+        p {
+            margin: 0;
+            letter-spacing: .075rem;
+            font-size: .75rem;
+            color: $color-black;
+            font-weight: 500;
         }
     }
 }
