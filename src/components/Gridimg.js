@@ -10,14 +10,33 @@ const Gridimg = () => {
                     <Col>
                         <div className="gridimg__container">
                             <div className="gridimg__content">
-                                <ul className="gridimg__list">
+                                <div className="gridimg__list">
+                                    <div className="gridimg__item">
+                                        <img className="gridimg__img" src={'https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg'} alt="algo"/>
+                                    </div>
+                                    <div className="gridimg__item">
+                                        <img className="gridimg__img" src={'https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg'} alt="algo"/>
+                                    </div>
+                                    <div className="gridimg__item">
+                                        <img className="gridimg__img" src={'https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg'} alt="algo"/>
+                                    </div>
+                                    <div className="gridimg__item">
+                                        <img className="gridimg__img" src={'https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg'} alt="algo"/>
+                                    </div>
+                                    <div className="gridimg__item">
+                                        <img className="gridimg__img" src={'https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg'} alt="algo"/>
+                                    </div>
+                                    <div className="gridimg__item">
+                                        <img className="gridimg__img" src={'https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg'} alt="algo"/>
+                                    </div>
+                                  
+                                    
+                                    {/* <li className="gridimg__item" style={{backgroundImage: `url(https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg)`}}></li>
                                     <li className="gridimg__item" style={{backgroundImage: `url(https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg)`}}></li>
                                     <li className="gridimg__item" style={{backgroundImage: `url(https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg)`}}></li>
                                     <li className="gridimg__item" style={{backgroundImage: `url(https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg)`}}></li>
-                                    <li className="gridimg__item" style={{backgroundImage: `url(https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg)`}}></li>
-                                    <li className="gridimg__item" style={{backgroundImage: `url(https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg)`}}></li>
-                                    <li className="gridimg__item" style={{backgroundImage: `url(https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg)`}}></li>
-                                </ul>
+                                    <li className="gridimg__item" style={{backgroundImage: `url(https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg)`}}></li> */}
+                                </div>
                             </div>
                         </div>
                     </Col>
