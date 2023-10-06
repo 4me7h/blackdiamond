@@ -12,15 +12,15 @@
     }
 
     &__item {
-        flex: 0 0 calc(49%); /* Tamaño de las imágenes (33.33% con espacio entre ellas) */
+        flex: 0 0 calc(49.5%); /* Tamaño de las imágenes (33.33% con espacio entre ellas) */
         position: relative;
-        padding-top: calc(49%); /* Para hacer las imágenes cuadradas */
+        padding-top: calc(49.5%); /* Para hacer las imágenes cuadradas */
         overflow: hidden;
-        margin-bottom: 2%;
+        margin-bottom: 1%;
         @include media('md') {
-            flex: 0 0 calc(32%); /* Tamaño de las imágenes (33.33% con espacio entre ellas) */
+            flex: 0 0 calc(33%); /* Tamaño de las imágenes (33.33% con espacio entre ellas) */
             position: relative;
-            padding-top: calc(32%); /* Para hacer las imágenes cuadradas */
+            padding-top: calc(33%); /* Para hacer las imágenes cuadradas */
         }
 
         // @include media('lg') {
