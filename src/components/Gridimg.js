@@ -2,7 +2,23 @@ import Col from "react-bootstrap/esm/Col";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 
+const imagePaths = [
+    require('../images/img-grid-01.jpg'),
+    require('../images/img-grid-02.jpg'),
+    require('../images/img-grid-03.jpg'),
+    require('../images/img-grid-04.jpg'),
+    require('../images/img-grid-05.jpg'),
+    require('../images/img-grid-06.jpg'),
+];
+
 const Gridimg = () => {
+
+    const images = imagePaths.map((path, index) => ({
+        id: index +1,
+        src: path,
+        alt: `image-${index+1}`,
+    }));
+
     return(
         <section className="gridimg">
             <Container>
@@ -10,33 +26,13 @@ const Gridimg = () => {
                     <Col>
                         <div className="gridimg__container">
                             <div className="gridimg__content">
-                                <div className="gridimg__list">
-                                    <div className="gridimg__item">
-                                        <img className="gridimg__img" src={'https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg'} alt="algo"/>
-                                    </div>
-                                    <div className="gridimg__item">
-                                        <img className="gridimg__img" src={'https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg'} alt="algo"/>
-                                    </div>
-                                    <div className="gridimg__item">
-                                        <img className="gridimg__img" src={'https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg'} alt="algo"/>
-                                    </div>
-                                    <div className="gridimg__item">
-                                        <img className="gridimg__img" src={'https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg'} alt="algo"/>
-                                    </div>
-                                    <div className="gridimg__item">
-                                        <img className="gridimg__img" src={'https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg'} alt="algo"/>
-                                    </div>
-                                    <div className="gridimg__item">
-                                        <img className="gridimg__img" src={'https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg'} alt="algo"/>
-                                    </div>
-                                  
-                                    
-                                    {/* <li className="gridimg__item" style={{backgroundImage: `url(https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg)`}}></li>
-                                    <li className="gridimg__item" style={{backgroundImage: `url(https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg)`}}></li>
-                                    <li className="gridimg__item" style={{backgroundImage: `url(https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg)`}}></li>
-                                    <li className="gridimg__item" style={{backgroundImage: `url(https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg)`}}></li>
-                                    <li className="gridimg__item" style={{backgroundImage: `url(https://www.blackdiamond-sorteos.com/assets/foto1-e2c6f44a.jpg)`}}></li> */}
-                                </div>
+                                <ul className="gridimg__list">
+                                    {images.map((image) =>(
+                                        <li key={image.id} className="gridimg__item">
+                                              <img className="gridimg__img" src={image.src} alt={image.alt} />
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
                     </Col>
