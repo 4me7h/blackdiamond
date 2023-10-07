@@ -33,6 +33,12 @@ input[type="submit"] {
 
 
 .text {
+    &--title {
+        font-size: 3rem;
+        color: $color-white;
+        margin: 0;
+        text-transform: uppercase;
+    }
     &--subtitle {
         font-size: 30px;
         font-weight: bold;

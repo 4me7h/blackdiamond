@@ -1,13 +1,19 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+
+import imgBackground from "../images/hero-nosotros.jpg";
 
 const Nosotros = () => {
     return(
-        <div>
+        <>
         <Navbar />
-        <h1>Nosotros Page</h1>
+        <Hero 
+            imgBackground={imgBackground}
+            text="Nosotros"
+        />
         <Footer />
-        </div>
+        </>
         
     );
 }

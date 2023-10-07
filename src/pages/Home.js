@@ -6,11 +6,15 @@ import Banner from "../components/Banner";
 import Gridimg from "../components/Gridimg";
 import Footer from "../components/Footer";
 
+import imgBackground from "../images/hero-home.jpg";
+
 const Home = () => {
     return(
         <>  
             <Navbar />
-            <Hero />
+            <Hero 
+                imgBackground={imgBackground}
+            />
             <Nosotros />
             <Autos />
             <Banner />
