@@ -14,7 +14,6 @@ const Nosotros = () => {
         />
         <Footer />
         </>
-        
     );
 }
 

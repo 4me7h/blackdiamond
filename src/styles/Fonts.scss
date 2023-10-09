@@ -31,13 +31,15 @@ input[type="submit"] {
     font-family: $ff-p;
 }
 
-
 .text {
     &--title {
-        font-size: 3rem;
+        font-size: 2rem;
         color: $color-white;
         margin: 0;
         text-transform: uppercase;
+        @include media('lg') {
+            font-size: 3rem;
+        }
     }
     &--subtitle {
         font-size: 30px;

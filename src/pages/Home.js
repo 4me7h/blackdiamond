@@ -14,6 +14,7 @@ const Home = () => {
             <Navbar />
             <Hero 
                 imgBackground={imgBackground}
+                text="La mejor opción para tener el autos de tus sueños"
             />
             <Nosotros />
             <Autos />

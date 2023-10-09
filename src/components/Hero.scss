@@ -18,14 +18,16 @@
 
     //hero contenidos
     &__container {
-        position: relative;
-        height: 580px;
+        position: absolute;
+        width: 90%;
+        bottom: 20%;
+        @include media('lg') {
+            bottom: 30%;
+        }
     }
     &__content {
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 4rem;
         padding-left: 1rem;
         border-left: 2px solid $color-yellow;
+        max-width: 600px;
     }
 }
