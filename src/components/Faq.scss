@@ -1,0 +1,23 @@
+.faq {
+    padding: 2rem 0;
+    &__header {
+        text-align: center;
+    }
+    &__content {
+        padding: 1rem 0 2rem;
+    }
+
+    &__list {
+        @include reset-list;
+
+        &__text {
+            font-size: 18px;
+            margin-bottom: 1rem;
+        }
+
+        &__number {
+            color: $color-yellow;
+            font-weight: 500;
+        }
+    }
+}
