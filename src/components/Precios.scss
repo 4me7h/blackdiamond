@@ -1,0 +1,18 @@
+.precios {
+    background-color: $color-shark;
+    padding: 2rem 0;
+    @include media('md') {
+        padding-top: 3rem;
+    }
+    &__header {
+        text-align: center;
+        margin-bottom: 1rem;
+        @include media('md') {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
