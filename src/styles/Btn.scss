@@ -19,7 +19,7 @@
     &--autos {
         @include link {
             color: $color-yellow;
-            background-color: lighten($color-black, 15%);
+            background-color: lighten($color-black, 25%);
             padding: .25rem 1rem;
             font-size: 16px;
             border-radius: 15px;
