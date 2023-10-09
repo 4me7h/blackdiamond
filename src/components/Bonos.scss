@@ -1,0 +1,61 @@
+.bonos {
+    padding: 2rem 0;
+    @include media('md') {
+        padding: 3rem 0 4rem;
+    }
+    &__header {
+        text-align: center;
+        margin-bottom: 2rem;
+        @include media('md') {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__list {
+        @include reset-list;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        margin-bottom: 1rem;
+        width: 100%;
+        @include media('sm') {
+            width: 55%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include media('lg') {
+            width: 33%;
+            margin: 0;
+        }
+    }
+    &__card {
+        padding: 2rem 1rem;
+        background-color: $color-gray;
+        color: $color-white;
+        text-align: center;
+        border-radius: 1rem;
+
+        &__img {
+            width: 250px;
+            margin-bottom: 1rem;
+        }
+        &__fase {
+            display: block;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        &__name {
+            display: block;
+            color: $color-yellow;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        &__text {
+            display: block;
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+}

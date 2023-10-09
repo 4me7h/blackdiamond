@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Autos from "../components/Autos";
 import Precios from "../components/Precios";
+import Bonos from "../components/Bonos";
 
 import imgBackground from "../images/hero-sorteos.jpg";
 
@@ -16,6 +17,7 @@ function Sorteos() {
       />
       <Autos />
       <Precios />
+      <Bonos />
       <Footer />
     </>
   );
