@@ -1,0 +1,44 @@
+.mision {
+    background-color: red;
+    padding: 3rem 0;
+
+    &__list {
+        @include reset-list;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }   
+    &__item {
+        width: 100%;
+        @include media('md') {
+            width: 55%;
+            margin: 0 auto;
+        }
+        @include media('lg') {
+            width: 32%;
+            margin: 0;
+        }
+    }
+    &__card {
+        padding: 2rem 1rem;
+        background-color: $color-black;
+        text-align: center;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        
+        &__img {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        &__title {
+            font-size: 24px;
+            color: $color-yellow;
+            display: block;
+            margin-bottom: 1rem;
+        }
+        &__text {
+            color: $color-white;
+            font-size: 18px;
+        }
+    }
+}
