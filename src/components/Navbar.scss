@@ -1,0 +1,120 @@
+.navbar {
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    top: 1.5rem;
+    z-index: 1;
+    &__container {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 0.75rem;
+        display: flex;
+        justify-content: space-between;
+        @include media('sm') {
+            width: 540px;
+        }
+        @include media('md') {
+            width: 720px;
+        }
+        @include media('lg') {
+            width: 960px;
+            align-items: center;
+        }
+        @include media('xl') {
+            width: 1140px;
+        }
+        @include media('xxl') {
+            width: 1320px;
+        }
+    }
+    &__col {
+        &:last-child {
+            @include media('lg') {
+                display: none;
+            }    
+        }   
+    }
+    &__logo {
+        width: 75px;
+        @include media('sm') {
+            width: 150px;
+        }
+    }
+    &__nav {
+        @include reset-list;
+        display: flex;
+        flex-direction: column;
+        // transform: translateY(-300%);
+        // transition: transform ease .35s;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height ease-in-out 0.35s;
+        &.visible  {
+            // transform: translateY(0);
+            max-height: 500px; 
+        }
+        @include media('lg') {
+            flex-direction: row;
+            background-color: transparent;
+        }
+        &__item {
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            @include media('lg') {
+                margin-right: 1.5rem;
+                margin-bottom: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+                a {
+                    @include link{
+                        color: $color-white;
+                        background-color: $color-yellow;
+                        padding: 0.5rem 0.75rem; 
+                        border-radius: 0.5rem;
+                    }
+                    @include hover {
+                        background-color: darken($color-yellow, 10%);
+                    }
+                    &.active {
+                        background-color: darken($color-yellow, 10%);
+                    }
+                }
+            }
+            a {
+                @include link {
+                    color: white;
+                    text-decoration: none;
+                }
+                @include hover {
+                    color: $color-yellow;
+                }
+                &.active {
+                    color: $color-yellow;
+                }
+            }
+        }
+    }
+    &__toggle {
+        background-color: $color-white;
+        border: none; 
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__icon {
+            margin-bottom: 0.35rem;
+            width: 1.8rem; 
+            height: 3px; 
+            background-color: $color-black;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
