@@ -42,44 +42,42 @@ const ContactForm = () => {
                             </div>
                             <div className="contact__content">
                                 <form onSubmit={handleSubmit}>
-                                    <div className="form-row">
-                                        <div className="form-group col-md-4">
-                                            <label htmlFor="name">Nombre</label>
-                                            <input 
-                                                type="text"
-                                                className="form-control"
-                                                id="name"
-                                                name="name"
-                                                value={formData.name}
-                                                onChange={handleChange}
-                                                required
-                                            />
-                                        </div>
-                                        <div className="form-group col-md-4">
-                                            <label htmlFor="phone">Teléfono</label>
-                                            <input 
-                                                type="tel"
-                                                className="form-control"
-                                                id="phone"
-                                                name="phone"
-                                                value={formData.phone}
-                                                onChange={handleChange}
-                                                required
-                                            />
-                                        </div>
-                                        <div className="form-group col-md-4">
-                                            <label htmlFor="email">Correo Electrónico</label>
-                                            <input 
-                                                type="email"
-                                                className="form-control"
-                                                id="email"
-                                                name="email"
-                                                value={formData.email}
-                                                onChange={handleChange}
-                                                required
-                                            />
-                                        </div>
+                                    <div className="form-group col-md-4">
+                                        <label htmlFor="name">Nombre</label>
+                                        <input 
+                                            type="text"
+                                            className="form-control"
+                                            id="name"
+                                            name="name"
+                                            value={formData.name}
+                                            onChange={handleChange}
+                                            required
+                                        />
                                     </div>
+                                    <div className="form-group col-md-4">
+                                        <label htmlFor="phone">Teléfono</label>
+                                        <input 
+                                            type="tel"
+                                            className="form-control"
+                                            id="phone"
+                                            name="phone"
+                                            value={formData.phone}
+                                            onChange={handleChange}
+                                            required
+                                        />
+                                    </div>
+                                    <div className="form-group col-md-4">
+                                        <label htmlFor="email">Correo Electrónico</label>
+                                        <input 
+                                            type="email"
+                                            className="form-control"
+                                            id="email"
+                                            name="email"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            required
+                                        />
+                                    </div>                                    
                                     <div className="form-group mb-4">
                                         <label htmlFor="message">Mensaje</label>
                                         <textarea 

@@ -44,11 +44,14 @@
         @include reset-list;
         display: flex;
         flex-direction: column;
-        max-height: 0;
+        max-height: 500px;
         overflow: hidden;
         transition: max-height ease-in-out 0.35s;
         &.visible  {
-            max-height: 500px; 
+            max-height: 0;
+            @include media('lg') {
+                max-height: 500px; 
+            }
         }
         @include media('lg') {
             flex-direction: row;
