@@ -33,10 +33,13 @@ input[type="submit"] {
 
 .text {
     &--title {
-        font-size: 2rem;
+        font-size: 1.2rem;
         color: $color-white;
         margin: 0;
         text-transform: uppercase;
+        @include media('sm') {
+            font-size: 2rem;
+        }
         @include media('lg') {
             font-size: 3rem;
         }
