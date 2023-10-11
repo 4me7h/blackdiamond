@@ -2,7 +2,7 @@ import Col from "react-bootstrap/esm/Col";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 
-import imgAuto01 from "../images/img-autos-01.png";
+import imgAuto01 from "../images/img-autos-02.png";
 
 const Autos = () => {
     return(
@@ -17,24 +17,6 @@ const Autos = () => {
                             </div>
                             <div className="autos__content">
                                 <ul className="autos__list">
-                                    <li className="autos__item">
-                                        <div className="autos__card">
-                                            <img className="autos__card__img" src={imgAuto01} alt="imagen auto 01" />
-                                            <span className="autos__card__date">Septiembre</span>
-                                            <span className="autos__card__name">Ford Lobo Shelby 2022</span>
-                                            <span className="autos__card__ficha">Consigue tus fichas</span>
-                                            <a href="/" className="btn btn--autos">Comprar Ficha</a>
-                                        </div>
-                                    </li>
-                                    <li className="autos__item">
-                                        <div className="autos__card">
-                                            <img className="autos__card__img" src={imgAuto01} alt="imagen auto 01" />
-                                            <span className="autos__card__date">Septiembre</span>
-                                            <span className="autos__card__name">Ford Lobo Shelby 2022</span>
-                                            <span className="autos__card__ficha">Consigue tus fichas</span>
-                                            <a href="/" className="btn btn--autos">Comprar Ficha</a>
-                                        </div>
-                                    </li>
                                     <li className="autos__item">
                                         <div className="autos__card">
                                             <img className="autos__card__img" src={imgAuto01} alt="imagen auto 01" />

@@ -29,7 +29,9 @@ const Gridimg = () => {
                                 <ul className="gridimg__list">
                                     {images.map((image) =>(
                                         <li key={image.id} className="gridimg__item">
-                                              <img className="gridimg__img" src={image.src} alt={image.alt} />
+                                            <a href="https://www.instagram.com/sorteos.blackdiamond/" target="_blank" rel="noreferrer">
+                                                <img className="gridimg__img" src={image.src} alt={image.alt} />
+                                            </a>
                                         </li>
                                     ))}
                                 </ul>
