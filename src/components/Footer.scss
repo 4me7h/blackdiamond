@@ -9,6 +9,9 @@
     &__logo {
         width: 150px;
         margin-bottom: 1rem;
+        @include media('md') {
+            margin-top: 2.6rem;
+        }
     }
 
     &__grid {
