@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //styles
 import './App.scss';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 //pages
 import Home from './pages/Home';
 import Nosotros from './pages/Nosotros';
@@ -13,7 +13,6 @@ import Login from './pages/Login';
 import Cookies from './pages/Cookies';
 import Terminos from './pages/Terminos';
 import Politica from './pages/Politica';
-
 
 function App() {
   return (

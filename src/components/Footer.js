@@ -15,7 +15,7 @@ const Footer = () => {
                             <div className="footer__content">
                                 <ul className="footer__grid">
                                     <li className="footer__col">
-                                        <Link to="/"><img class="footer__logo" src={logoColor} alt="logoBD"/></Link>
+                                        <Link to="/" exact><img class="footer__logo" src={logoColor} alt="logoBD"/></Link>
                                     </li>
                                     <li className="footer__col">
                                         <h4 className="text--footer-title">Social Media</h4>
@@ -63,7 +63,7 @@ const Footer = () => {
                                     <li className="footer__col">
                                         <h4 className="text--footer-title">Modalidad</h4>
                                         <ul className="footer__list">
-                                            <li className="footer__list__item text--footer">Sortéos de Autos</li>
+                                            <li className="footer__list__item text--footer"><Link to="/sorteos">Sortéos de Autos</Link></li>
                                             <li className="footer__list__item text--footer"><Link to="/terminos">Términos y condiciones</Link></li>
                                             <li className="footer__list__item text--footer"><Link to="/politica">Politica de privacidad</Link></li>
                                             <li className="footer__list__item text--footer"><Link to="/cookies">Cookies</Link></li>
